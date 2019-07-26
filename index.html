@@ -13,7 +13,7 @@
       height: 100%;
     }
     .right {
-      background-image: url(https://source.unsplash.com/650x800/?travel);
+      background-image: url(https://picsum.photos/500/700);
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -32,11 +32,28 @@
     .left .content-holder {
       align-self: center;
       font-family: 'Great Vibes', cursive;
+      width: 100%;
+      padding: 50px;
+      text-align: center;
+    }
+    input {
+      outline-width: 0;
+      border: none;
     }
     .quote {
       font-size: 32px;
     }
+    #reminder-input {
+      padding: 5px;
+      font-size: 16px;
+      border-bottom: solid 2px #eee;
+    }
+    .reminder-input-holder {
+      width: 95%;
+
+    }
   </style>
+<script type="text/javascript" src="/main.js" ></script>
 </head>
 <body class="container">
   <div class="left cell">
@@ -44,8 +61,13 @@
       <span class="quote">
         Amar Jyoti Kachari
       </span>
+      <div class="reminder-input-holder">
+        <input id="reminder-input" /><button id="saveItemBtn">Save</button>
+      </div>
     </div>
   </div>
-  <div class="right cell" />
+  <div class="right cell">
+
+  </div>
 </body>
 </html>
