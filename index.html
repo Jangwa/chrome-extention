@@ -11,6 +11,7 @@
       margin: 0 auto;
       display: flex;
       height: 100%;
+      background-color: dimgrey;
     }
     .right {
       background-image: url(https://picsum.photos/500/700);
@@ -47,10 +48,13 @@
       padding: 5px;
       font-size: 16px;
       border-bottom: solid 2px #eee;
+      background-color: transparent;
+      width: 100%;
+      margin: 10px 0;
     }
     .reminder-input-holder {
       width: 95%;
-
+      text-align: left;
     }
     #saveItemViewer {
       text-align: left;
@@ -58,7 +62,19 @@
       font-size: 25px;
     }
     #saveItemViewer div {
-      border-bottom: solid 1px #efefef;
+      border-bottom: solid 1px #777;
+      font-size: 12px;
+      font-family: monospace;
+      color: #fff;
+      padding: 10px;
+    }
+    #saveItemBtn {
+      background: no-repeat;
+      border: solid 1px #aaa;
+      padding: 5px 20px;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: 900;
     }
   </style>
 <script type="text/javascript" src="/main.js" ></script>
@@ -70,8 +86,8 @@
         Amar Jyoti Kachari
       </span>
       <div class="reminder-input-holder">
-        <input id="reminder-input" /><button id="saveItemBtn">Save</button>
         <div id="saveItemViewer">''</div>
+        <input id="reminder-input" /><button id="saveItemBtn">Save</button>
       </div>
     </div>
   </div>
